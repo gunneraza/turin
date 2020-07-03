@@ -1,0 +1,38 @@
+.section-projects {
+
+}
+
+
+.projects {
+    margin-top: 20px;
+
+    
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        overflow: hidden;
+        transition: 300ms ease;
+        padding: 10px;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+
+        .project {
+            width: 300px;
+
+            @media (max-width: 768px) {
+                width: 400px;
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}

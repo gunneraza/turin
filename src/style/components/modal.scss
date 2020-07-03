@@ -1,0 +1,121 @@
+.modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    overflow: auto;
+    display: none;
+
+    &__container {
+        width: 70%;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+        position: relative;
+
+        @media(max-width: 1400px) {
+            width: 90%;
+        }
+    }
+
+    &-close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.project-modal {
+    width: 100%;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: 992px) {
+            flex-direction: column;
+        }
+    }
+
+
+
+    .projects-slider {
+
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+
+        @media(max-width: 992px) {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        @media(max-width: 576px) {
+            margin-top: 10px;
+        }
+
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 500px;
+
+            @media(max-width: 576px) {
+                height: 350px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .project-modal__description {
+        width: 50%;
+        padding: 10px 40px;
+
+        p {
+            @media(max-width: 576px) {
+                font-size: 14px;
+            }
+        }
+
+        ul {
+            @media(max-width: 576px) {
+                padding: 0px;
+                font-size: 14px;
+            }
+        }
+
+        @media(max-width: 992px) {
+            width: 100%;
+        }
+
+        @media(max-width: 576px) {
+            padding: 4px 10px;
+        }
+    }
+
+}
+
+
+body.active-modal {
+
+    .modal {
+        display: block;
+    }
+    
+}

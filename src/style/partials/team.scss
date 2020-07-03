@@ -1,0 +1,63 @@
+.section-team {
+    position: relative;
+}
+
+.team-slider {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__button {
+        position: absolute;
+        z-index: 99;
+        cursor: pointer;
+
+        @media(max-width: 992px) {
+            display: none;
+        }
+
+        @media(max-width: 1400px) {
+            padding: 2px;
+        }
+
+        svg {
+            width: 60px;
+            height: 60px;
+            fill: $blue;
+
+            @media(max-width: 1400px) {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        &_next {
+            top: 50%;
+            right: -100px;
+
+            @media(max-width: 1400px) {
+                right: -40px;
+            }
+        }
+
+        &_prev {
+            top: 50%;
+            left: -100px;
+
+            @media(max-width: 1400px) {
+                left: -40px;
+            }
+
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+}

@@ -1,0 +1,24 @@
+.section {
+    padding: 60px 0px;
+
+    .section-header {
+            
+
+        &__title {
+            font-size: 28px;
+            color: $blue;
+            text-align: center;
+        }
+
+        &__title_left {
+            text-align: left;
+        }
+    }
+
+    .section-footer {
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+}

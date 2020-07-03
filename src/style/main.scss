@@ -1,0 +1,42 @@
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/utilities";
+@import "utils/variables.scss";
+
+// libs
+@import "libs/swiper.css";
+@import "libs/animate.css";
+
+// components
+@import "components/button.scss";
+@import "components/section.scss";
+@import "components/person_card.scss";
+@import "components/project_card.scss";
+@import "components/modal.scss";
+@import "components/form.scss";
+
+// partials
+@import "partials/header.scss";
+@import "partials/home.scss";
+@import "partials/features.scss";
+@import "partials/team.scss";
+@import "partials/partners.scss";
+@import "partials/tie.scss";
+@import "partials/contacts.scss";
+@import "partials/projects.scss";
+@import "partials/footer.scss";
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+body.active-modal {
+  overflow: hidden;
+}
