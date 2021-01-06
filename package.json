@@ -54,7 +54,7 @@
     "last 2 versions"
   ],
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "swiper": "^5.3.6",
     "wow.js": "^1.2.2"
